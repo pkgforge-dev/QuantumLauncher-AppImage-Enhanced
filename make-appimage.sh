@@ -12,7 +12,7 @@ export ICON=/usr/share/icons/hicolor/256x256/apps/quantumlauncher.png
 export DESKTOP=/usr/share/applications/quantumlauncher.desktop
 
 # Deploy dependencies
-quick-sharun /usr/bin/quantumlauncher
+quick-sharun /usr/bin/quantumlauncher /usr/lib/jvm/java-*-openjdk
 
 # Additional changes can be done in between here
 
