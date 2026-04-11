@@ -20,6 +20,12 @@ quick-sharun /usr/bin/quantumlauncher /usr/bin/env
 cc -shared -fPIC -O2 -o ./AppDir/lib/execve-sharun-hack.so execve-sharun-hack.c -ldl
 echo 'execve-sharun-hack.so' >> ./AppDir/.preload
 
+(
+  cd ./AppDir/lib
+  ln -sv ./pulseaudio/*.so ./ || :
+  ln -sv ./alsa-lib/*.so ./   || :
+)
+
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
 
