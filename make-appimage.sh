@@ -13,6 +13,7 @@ export DESKTOP=/usr/share/applications/quantumlauncher.desktop
 export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 export DEPLOY_PULSE=1
+export APPNAME=QuantumLauncher
 
 # Deploy dependencies
 quick-sharun /usr/bin/quantumlauncher /usr/bin/env
