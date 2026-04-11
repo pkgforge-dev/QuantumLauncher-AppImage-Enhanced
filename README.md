@@ -1,19 +1,21 @@
 <div align="center">
 
-# QuantumLauncher-AppImage 🐧
+# QuantumLauncher-AppImage-Enhanced 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/QuantumLauncher-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/QuantumLauncher-AppImage/releases/latest)
-[![CI Build Status](https://github.com/pkgforge-dev/QuantumLauncher-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/QuantumLauncher-AppImage/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/QuantumLauncher-AppImage)](https://github.com/pkgforge-dev/QuantumLauncher-AppImage/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/QuantumLauncher-AppImage-Enhanced/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/QuantumLauncher-AppImage-Enhanced/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/QuantumLauncher-AppImage-Enhanced/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/QuantumLauncher-AppImage-Enhanced/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/QuantumLauncher-AppImage-Enhanced)](https://github.com/pkgforge-dev/QuantumLauncher-AppImage-Enhanced/releases/latest)
 
 <p align="center">
   <img src="https://github.com/Mrmayman/quantumlauncher/blob/main/assets/icon/128x128/ql_logo.png" width="128" />
 </p>
 
+Improved AppImage **independent of the host libc** which makes able to work on very very old distros as well as musl-libc distros like alpine linux.
+Most minecraft launchers just download java in the user's home and do not take into consideration that downloaded java may not be able to work on the host system at all, due to the `java` binaries being dynamic and depending on the glibc dynamic linker in `/lib64`. **This AppImages fixes that issue by intercepting the `execve` calls to the user's `java` to run with sharun which allows using a portable dynamic linker instead.**
 
 | Latest Stable Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/QuantumLauncher-AppImage/releases/latest) | [Click here](https://github.com/Mrmayman/quantumlauncher) |
+| [Click here](https://github.com/pkgforge-dev/QuantumLauncher-AppImage-Enhanced/releases/latest) | [Click here](https://github.com/Mrmayman/quantumlauncher) |
 
 </div>
 
