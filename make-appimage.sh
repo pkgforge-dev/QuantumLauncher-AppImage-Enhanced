@@ -19,7 +19,7 @@ quick-sharun /usr/bin/quantumlauncher /usr/bin/env
 
 cc -shared -fPIC -O2 -o ./AppDir/lib/execve-sharun-hack.so execve-sharun-hack.c -ldl
 echo 'execve-sharun-hack.so' >> ./AppDir/.preload
-echo 'ANYLINUX_EXECVE_WRAP_PATHS=${DATADIR}' >> ./AppDir/.env
+echo 'export ANYLINUX_EXECVE_WRAP_PATHS="$DATADIR"' >> ./AppDir/bin/execve-wrap-path.hook
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
