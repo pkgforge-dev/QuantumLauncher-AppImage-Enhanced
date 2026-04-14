@@ -16,7 +16,7 @@ export DEPLOY_PULSE=1
 export APPNAME=QuantumLauncher
 
 # Deploy dependencies
-quick-sharun /usr/bin/quantumlauncher /usr/bin/env
+quick-sharun /usr/bin/quantumlauncher /usr/lib/libSDL3.so* /usr/bin/env
 
 cc -shared -fPIC -O2 -o ./AppDir/lib/execve-sharun-hack.so execve-sharun-hack.c -ldl
 echo 'execve-sharun-hack.so' >> ./AppDir/.preload
